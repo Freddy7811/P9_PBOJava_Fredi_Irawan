@@ -3,21 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.p9_pbojava_fredi_irawan;
+package com.asia.p9_pbojava_sistemperkuliahan.ui;
+
+import java.util.Scanner;
 
 /**
  *
  * @author A-6
  */
-import java.util.Scanner;
-
-public class Main {
-    // private static DataManager dataManager;
-    private static Scanner scanner = new Scanner(System.in);
-
-    public static void main(String[] args) {
-        // Create DataManager instance (specify array sizes)
-        // dataManager = new DataManager(100, 50, 20, 200);
+public class TextUi {
+    
+   private static Scanner scanner = new Scanner(System.in);
+   
+   public TextUi(){
+       System.out.println("ini adalah konstruktor dari Text Ui");
+   }
+   
+    public void run(){
         while (true) {
             displayMainMenu();
             int choice = scanner.nextInt();
@@ -43,14 +45,12 @@ public class Main {
             }
         }
     }
-
-    // Method to display the main menu
-    private static void displayMainMenu() {
+         // Method to display the main menu
+    private void displayMainMenu(){
         System.out.println("===================================");
         System.out.println(" SISTEM INFORMASI AKADEMIK");
         System.out.println("===================================");
         System.out.println("Pilih menu:");
-
         System.out.println("1. Data Perkuliahan");
         System.out.println("2. Data Dosen");
         System.out.println("3. Data Staf");
@@ -60,7 +60,7 @@ public class Main {
     }
 
     // Methods for handling sub-menus
-    private static void handlePerkuliahanMenu() {
+    private void handlePerkuliahanMenu() {
         while (true) {
             System.out.println("\n===================================");
             System.out.println(" SISTEM INFORMASI AKADEMIK");
@@ -91,7 +91,7 @@ public class Main {
         }
     }
 
-    private static void handleDosenMenu() {
+    private void handleDosenMenu() {
         while (true) {
             System.out.println("\n===================================");
             System.out.println(" SISTEM INFORMASI AKADEMIK");
@@ -119,7 +119,7 @@ public class Main {
         }
     }
 
-    private static void handleStafMenu() {
+    private void handleStafMenu() {
         while (true) {
             System.out.println("\n===================================");
             System.out.println(" SISTEM INFORMASI AKADEMIK");
@@ -146,7 +146,7 @@ public class Main {
         }
     }
 
-    private static void handleMahasiswaMenu() {
+    private void handleMahasiswaMenu() {
         while (true) {
             System.out.println("\n===================================");
             System.out.println(" SISTEM INFORMASI AKADEMIK");
@@ -173,4 +173,9 @@ public class Main {
             }
         }
     }
-}
+ }
+            
+    
+    
+     
+ 
